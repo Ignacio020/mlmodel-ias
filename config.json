@@ -1,0 +1,37 @@
+{
+    "paths": {
+        "data_origin": "/dbfs/mnt/kv/staging/consolidated",
+        "bins": "C:/Users/mzylbers/Documents/Tenaris/Recomendation_edicion_codigo/bins",
+        "nltk_data": "C:/Users/mzylbers/Documents/Tenaris/RecomendationRepo/NLTK_DATA",
+        "modeling": "C:/Users/mzylbers/Documents/Tenaris/Recomendation_edicion_codigo"
+    },
+
+    "columns_of_interest": [
+        "ticket",
+        "current_priority", 
+        "end_user_country", 
+        "group_assinee_contact_name", 
+        "customer_admin_organization_name", 
+        "configuration_item", 
+        "ci_cluster_level_3", 
+        "category", 
+        "summary_en", 
+        "description_en",
+        "resolution_code",
+		"solution"
+    ],
+
+    "columns_to_vectorize": ["summary_en","description_en"],
+    
+    "desired_statuses": ["CL","RE"],
+
+    "output_columns": [
+        "ticket",
+        "sim",
+        "summary_en",
+        "description_en",
+        "resolution_code",
+        "configuration_item",
+        "category"
+    ]
+}
